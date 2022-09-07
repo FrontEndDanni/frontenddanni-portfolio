@@ -10,11 +10,11 @@ import TrackVisibility from 'react-on-screen';
 export const Projects = () => {
     const projects = [
         {
-            title: "Weather App",
-            description: "A JavaScript application that fetches current weather information from around the globe using OpenWeatherMap's open-source API.",
+            title: "Youtube Clone",
+            description: "A fully-functional video-streaming application built using ReactJS for its frontend & NodeJS for its backend, with data fetched from RapidAPI.",
             imgUrl: projImg1,
             linkText: "Github Repo",
-            link:"https://github.com/FrontEndDanni/JSWeather-App",
+            link:"https://github.com/FrontEndDanni/youtube-clone",
           },
           {
             title: "'EZ Read' Library API",
