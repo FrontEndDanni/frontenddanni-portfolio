@@ -4,7 +4,6 @@ import projImg1 from '../assets/images/project-img1.png';
 import projImg2 from '../assets/images/project-img2.png';
 import projImg3 from '../assets/images/project-img3.png';
 import 'animate.css';
-import TrackVisibility from 'react-on-screen';
 
 
 export const Projects = () => {
@@ -38,16 +37,14 @@ export const Projects = () => {
           <Container>
             <Row>
               <Col size={12}>
-                <TrackVisibility>
-                  {({ isVisible }) =>
-                  <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
+                
                     <h2>Projects</h2>
                     <p>While these showcase my full-stack application capabilities, I have also programmed smaller projects that include a Return on Investment Calculator with Python, registration and log-in mockup pages with CSS/HTML/BootStrap, and Entity Relationship Diagrams for databases in SQL. Visit my Github to see more!</p>
 
                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
                       <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                         <Nav.Item>
-                          <Nav.Link eventKey="first">Past Projects</Nav.Link>
+                          <Nav.Link eventKey="first">My Projects</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                           <Nav.Link eventKey="second">This Portfolio</Nav.Link>
@@ -56,7 +53,7 @@ export const Projects = () => {
                           <Nav.Link eventKey="third">About Me</Nav.Link>
                         </Nav.Item>
                       </Nav>
-                      <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                      <Tab.Content>
                         <Tab.Pane eventKey="first">
                           <Row>
                             {
@@ -73,7 +70,7 @@ export const Projects = () => {
                         </Tab.Pane>
                         <Tab.Pane eventKey="second">
                           <p>This portfolio was engineered with React and Node.</p>
-                          <p>The animated text features were added using an npm package called animate.style. The functional email component was added with EmailJS.</p>
+                          <p>The functional email component was added with EmailJS.</p>
                           <p>While the specific stylings were done by myself using CSS, I utilized React bootstrap as a boilerplate for components like the carousel, the navbar, these pill tabs, and the project thumbnails.</p>
                           <p>It is responsive with mobile and window-resizing.</p>
                         </Tab.Pane>
@@ -86,8 +83,6 @@ export const Projects = () => {
                         </Tab.Pane>
                       </Tab.Content>
                     </Tab.Container>
-                  </div>}
-                </TrackVisibility>
               </Col>
             </Row>
           </Container>

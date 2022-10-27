@@ -44,9 +44,6 @@ export const Contact = () => {
                         <img src={contactImg} alt='contact us'/>
                     </Col>
                     <Col size={12} md={6}>
-                        <TrackVisibility>
-                        {({ isVisible })=> 
-                        <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                         <h2>Get in touch!</h2>
                         <form ref={form} onSubmit={sendEmail} id="my_form">
                             <Row>
@@ -69,8 +66,7 @@ export const Contact = () => {
                                 
                             </Row>
                         </form>
-                        </div>}
-                        </TrackVisibility>
+                        
                     </Col>
                 </Row>
             </Container>

@@ -31,12 +31,12 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #F1BC72ff !important;
+  background-color: black !important;
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   line-height: normal;
@@ -275,7 +275,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/images/banner-bg.jpg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -284,7 +283,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: rgba(255, 194, 76, 0.5);
+  background: rgb(73, 12, 1, 0.8);
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 5px;
   font-size: 20px;
@@ -456,7 +455,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 0 55px 55px 0;
 }
 .proj-imgbx {
-  max-height: 80%;
+  max-height: 75.5%;
   position: relative;
   border-radius: 30px;
   overflow: hidden;
@@ -464,8 +463,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, rgba(48, 3, 194, 0.5) -5.91%, rgba(91, 178, 255, 0.5) 111.58%);
-  opacity: 0.85;
+  background-color: rgb(59, 10, 1);
+  opacity: 80%;
   position: absolute;
   width: 100%;
   height: 0;
@@ -474,6 +473,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .proj-imgbx:hover::before {
   height: 100%;
 }
+
 .proj-txtx {
   position: absolute;
   text-align: center;
@@ -513,24 +513,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   cursor:pointer;
 }
 
-.proj-txtx a:hover {
-  color:rgb(255, 194, 62);
-}
-
-.background-image-right {
-  top: 20%;
-  position: absolute;
-  bottom: 0;
-  width: 35%;
-  right: 0;
-  z-index: -4;
-}
 
 /* Contact  */
 .contact {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/images/banner-bg.jpg');
   background-position: bottom center;
   background-size: cover;
   background-repeat: no-repeat;
