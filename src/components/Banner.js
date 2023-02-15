@@ -2,6 +2,10 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/images/header-img.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
+import { HashLink } from 'react-router-hash-link';
+import {
+  BrowserRouter as Router
+} from "react-router-dom";
 
 
 /**
@@ -52,14 +56,17 @@ export const Banner = () => {
   }
 
   return (
+    <Router>
     <section className="banner" id="home">
       <Container>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
                 <span className="tagline">Welcome to my Portfolio!</span>
-                <h1>{`Hi, I'm FrontEndDanni!`} <br></br> <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>I'm Dannika, but you can call me Danni. I built this portfolio to showcase my passion for web development, especially in frontend and UI/UX design. Don't hesitate to reach out if any of my work interests you!</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect! <ArrowRightCircle size={25} /></button>
+                <h1 className="title">{`Hi, I'm Danni!`} <br></br> <span className="txt-rotate" data-period="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                  <p className="intro">I create seamless user experiences with beautiful design and cutting-edge technology. Let's build something amazing together!</p>
+                  <HashLink className="connectButton" to='#connect'>
+                    <button className="letsConnect" onClick={() => console.log('connect')}>Let’s Connect! <ArrowRightCircle size={25} /></button>
+                  </HashLink>
               
           </Col>
           <Col xs={12} md={6} xl={5}>
@@ -68,5 +75,6 @@ export const Banner = () => {
         </Row>
       </Container>
     </section>
+    </Router>
   )
 }

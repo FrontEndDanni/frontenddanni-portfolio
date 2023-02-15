@@ -31,7 +31,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: black !important;
+  background: linear-gradient(to bottom right, #ffffff, #b4e4e4);
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
 }
@@ -40,6 +40,14 @@ h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   line-height: normal;
+}
+
+.title{
+  color:black;
+}
+
+.intro{
+  color:black !important;
 }
 
 p, a, li, button, ul {
@@ -94,12 +102,19 @@ nav.navbar.scrolled {
   padding: 0px 0;
   background-color: rgb(59, 10, 1);
 }
+
+nav.navbar.scrolled .navbar-brand,
+nav.navbar.scrolled .navbar-nav .nav-link.navbar-link {
+  color: white;
+}
+
+
 nav.navbar a.navbar-brand {
     width: 9%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
-  color: #fff !important;
+  color: black;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
@@ -118,10 +133,11 @@ span.navbar-text {
     margin-left: 14px;
 }
 
+
 .social-icon a {
     width: 42px;
     height: 42px;
-    background: rgba(217, 217, 217, 0.1);
+    background: rgba(0, 0, 0, 0.9);
     display: inline-flex;
     border-radius: 50%;
     margin-right: 6px;
@@ -135,7 +151,7 @@ span.navbar-text {
     width: 42px;
     height: 42px;
     position: absolute;
-    background-color: #ffffff;
+    background-color: #01a1a1;
     border-radius: 50%;
     transform: scale(0);
 	transition: 0.3s ease-in-out;
@@ -174,7 +190,7 @@ span.navbar-text {
   width: 42px;
   height: 42px;
   position: absolute;
-  background-color: #ffffff;
+  background-color: #01a1a1;
   border-radius: 50%;
   transform: scale(0);
 transition: 0.3s ease-in-out;
@@ -193,8 +209,9 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
 
 .navbar-text button {
   font-weight: 700;
-  color: #fff;
-  border: 1px solid #fff;
+  color: black;
+  border: 1px solid black;
+  border-radius:5px;
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
@@ -202,6 +219,7 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
 }
+
 .navbar-text button span {
   z-index: 1;
 }
@@ -210,14 +228,14 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #fff;
+  background-color: #01a1a1;
   left: 0;
   top: 0;
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
 .navbar-text button:hover {
-  color: #121212;
+  color: white;
 }
 .navbar-text button:hover::before {
 	content: "";
@@ -225,29 +243,36 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
 	height: 100%;
 	position: absolute;
 }
+
+nav.navbar.scrolled .navbar-text button{
+  color: white;
+  border-color:white;
+}
+
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
+  border:2px rgb(42, 42, 42) solid;
 	outline: none;
     box-shadow: none;
 }
 nav.navbar .navbar-toggler-icon {
   width: 24px;
   height: 17px;
-  background-image: none;
+  background-image:black;
   position: relative;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid white;
   transition: all 300ms linear;
   top: -2px;
 }
 nav.navbar .navbar-toggler-icon:focus {
-	border-bottom: 2px solid #fff;
+	border-bottom: 2px solid white;
 }
 nav.navbar .navbar-toggler-icon:after,
 nav.navbar .navbar-toggler-icon:before {
 	width: 24px;
 	position: absolute;
 	height: 2px;
-	background-color: #fff;
+	background-color: white;
 	top: 0;
 	left: 0;
 	content: '';
@@ -283,7 +308,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: rgb(73, 12, 1, 0.8);
+  background: rgba(1, 161, 161, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 5px;
   font-size: 20px;
@@ -299,14 +324,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #ffffff;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
 }
 .banner button {
-  color: #fff;
+  color: black;
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
@@ -314,6 +338,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   align-items: center;
 }
+
+.connectButton{
+  text-decoration:none;
+}
+
 .banner button svg {
   font-size: 25px;
   margin-left: 10px;
@@ -326,6 +355,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner img {
   animation: updown 3s linear infinite;
 }
+
 @keyframes updown {
     0% {
         transform: translateY(-20px);
@@ -338,7 +368,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     }
 }
 .txt-rotate > .wrap {
-  border-right: 0.08em solid rgb(224, 224, 224);
+  border-right: 0.08em solid rgb(0, 0, 0);
 }
 
 /* Skills Css */
@@ -430,7 +460,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: absolute;
     width: 0;
     height: 100%;
-    background: linear-gradient(90.21deg, rgba(255, 218, 161, 0.5) -5.91%, rgba(91, 178, 255, 0.5) 111.58%);
+    background: #01a1a1;
     top: 0;
     left: 0;
     z-index: -1;
@@ -463,7 +493,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx::before {
   content: "";
-  background-color: rgb(59, 10, 1);
+  background-color: #01a1a1;
   opacity: 80%;
   position: absolute;
   width: 100%;
@@ -522,6 +552,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .contact img {
   width: 92%;
 }
@@ -529,13 +560,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-size: 45px;
 	font-weight: 700;
   margin-bottom: 30px;
+  color:black;
 }
 .contact form input, .contact form textarea {
   width: 100%;
   background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 20px;
-  color: #fff;
+  color: black;
   margin: 0 0 8px 0;
   padding: 18px 26px;
   font-weight: 500;
@@ -550,7 +582,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form input::placeholder, .contact form textarea::placeholder {
   font-size: 16px;
   font-weight: 400;
-  color: #fff;
+  color: black;
 }
 .contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
   color: #121212;
@@ -563,7 +595,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 14px 48px;
   font-size: 18px;
   margin-top: 25px;
-  border-radius: 0;
+  border-radius:10px;
   position: relative;
   transition: 0.3s ease-in-out;
 }
@@ -584,6 +616,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   left: 0;
   z-index: 0;
   transition: 0.3s ease-in-out;
+  border-radius:5px;
 }
 .contact form button:hover::before {
   width: 100%;

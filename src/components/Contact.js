@@ -44,7 +44,7 @@ export const Contact = () => {
                         <img src={contactImg} alt='contact us'/>
                     </Col>
                     <Col size={12} md={6}>
-                        <h2>Get in touch!</h2>
+                        <h2 className="getinTouch">Get in touch!</h2>
                         <form ref={form} onSubmit={sendEmail} id="my_form">
                             <Row>
                                 <Col size={12} sm={6} className='px-1'>

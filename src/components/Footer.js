@@ -16,7 +16,6 @@ export const Footer = () => {
                         <div className='social-icon-2'>
                             <a href='https://www.linkedin.com/in/frontenddanni'><img src={navIcon1}/></a>
                             <a href='https://www.github.com/FrontEndDanni'><img src={navIcon2}/></a>
-                            <a href='https://www.instagram.com/frontenddanni/'><img src={navIcon3}/></a>
                         </div>
                         <p>CopyRight 2022. All Rights Reserved by FrontEndDanni</p>
                     </Col>
