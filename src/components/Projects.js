@@ -31,6 +31,8 @@ export const Projects = () => {
           },
     ];
 
+  
+
 
     return (
         <section className="project" id="projects">
@@ -50,7 +52,7 @@ export const Projects = () => {
                           <Nav.Link eventKey="second">This Portfolio</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                          <Nav.Link eventKey="third">About Me</Nav.Link>
+                          <Nav.Link eventKey="third">My Resume</Nav.Link>
                         </Nav.Item>
                       </Nav>
                       <Tab.Content>
@@ -75,11 +77,10 @@ export const Projects = () => {
                           <p>It is responsive with mobile and window-resizing.</p>
                         </Tab.Pane>
                         <Tab.Pane eventKey="third">
-                        <p>I have been an artist for as long as I have been around. I have also been a technology geek for equally as long. It was only a matter of time before I would realize my passion for web development.</p>
-                        <p>I'm also a bit of a coffee fanatic. Before pursuing my career in web development, I was a barista for 5 years. Did my portfolio make that a little too obvious?</p> 
-                        <p>Aside from art, technology, and my all-consuming thirst for coffee, I have always been completely fascinated with biology. I take advantage of my free time and use it to hike in hopes I'll spot some of my favorite wildlife.</p> 
-                        <p>Some might find it surprising that I got into programming, but I don't. I fell in love with it years ago when I designed blog layouts for artists using HTML and CSS. Recently, I wanted to take it a step further by building web applications- and making them look great.</p> 
-                        <p>Of course I am still learning on my long, long journey on this career path I've chosen, but that's another reason I grew so attached to it. To be able to learn something new every day and to watch my growth as a developer is one of the reasons I find it so fulfilling. I'm excited to see where my projects take me, whether they be alone or part of a collaboration with a team of developers.</p>
+                        <center>
+                            <iframe src="https://drive.google.com/file/d/1yGYkA0xgiS6jJt830RwiRLosrkr6WipP/preview" width="65%" height="500"></iframe>
+                        </center>
+                          
                         </Tab.Pane>
                       </Tab.Content>
                     </Tab.Container>
