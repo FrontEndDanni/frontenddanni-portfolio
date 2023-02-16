@@ -12,6 +12,16 @@ export const Contact = () => {
   
     const sendEmail = (e) => {
       e.preventDefault();
+
+    // Check if any form fields are empty
+    const formFields = form.current.elements;
+        for (let i = 0; i < formFields.length; i++) {
+            if (formFields[i].value.trim() === '') {
+                console.log("Form is incomplete. Message not sent.")
+                window.alert("Please fill out all fields.");
+      return;
+    }
+  }
   
       emailjs
         .sendForm(
